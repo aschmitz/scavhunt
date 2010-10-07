@@ -1,0 +1,238 @@
+/*
+scavhunt - An online scavenger hunt
+Copyright 2010, Andy Schmitz
+
+This program is free software: you can redistribute it and/or modify it under   
+the terms of the GNU Affero General Public License as published by the Free
+Software Foundation, either version 3 of the License, or (at your option) any   
+later version.
+
+This program is distributed in the hope that it will be useful, but WITHOUT
+ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS   
+FOR A PARTICULAR PURPOSE.  See the GNU Affero General Public License (in the    
+LICENSE file) for more details.
+*/
+
+body, input {
+	font-family: Helvetica, Tahoma, Arial, sans-serif;
+}
+
+a {
+	color: inherit;
+	text-decoration: underline;
+}
+a:hover {
+	text-decoration: none;
+}
+
+select {
+	background-color: #888;
+	color: #000;
+	border: 2px solid #555;
+	font-size: 24px;
+	line-height: 120%;
+	padding: 5px;
+}
+
+input, textarea {
+	font-family: Helvetica, Tahoma, Arial, sans-serif;
+	color: #fff;
+	background-color: #000;
+	font-size: 24px;
+	line-height: 120%;
+	border: 2px solid #555;
+	padding: 5px;
+}
+
+input.button {
+	color: #000;
+	background-color: #fff;
+	padding-left: 50px;
+	padding-right: 50px;
+	cursor: pointer;
+}
+
+input.button:hover {
+	background-color: #aaa;
+}
+
+table {
+	color: #fff;
+	padding: 0;
+	margin: 0;
+}
+
+th, td {	
+	border: 1px solid #ccc;
+	padding: 5px;
+	margin: 0;
+}
+
+.serif {
+	font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.header {
+	margin-top: 15px;
+}
+
+.tagline, .footer {
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-size: 24px;
+	padding-top: 7px;
+	padding-bottom: 7px;
+}
+
+.footer {
+	margin-top: 20px;
+	margin-bottom: 15px;
+}
+
+.countdown_container {
+	height: 88px;
+}
+
+#countdown {
+	color: #888;
+	font-size: 50px;
+	font-weight: bold;
+	right: 0;
+	bottom: 0;
+	position: absolute;
+}
+
+.menu {
+	font-size: 24px;
+	background-color: #000;
+	border-top: #eee 3px solid;
+	border-bottom: #eee 3px solid;
+}
+
+.menu .item, .menu .name {
+	padding-top: 7px;
+	padding-bottom: 7px;
+	color: #fff;
+}
+
+.menu .item {
+	text-align: center;
+}
+.menu a.item {
+	text-decoration: none;
+}
+.menu .item.selected, .menu a.item:hover {
+	background-image: url('/images/menu_gradient.png');
+	color: #000;
+}
+
+.menu .name {
+	text-align: right;
+}
+
+.body {
+	background-image: url('/images/body_gradient.png');
+	background-repeat: repeat-x;
+	background-color: #171717;
+	color: #fff;
+	font-size: 32px;
+	line-height: 140%;
+}
+
+.gray {
+	color: #aaa;
+}
+
+.bigText {
+	font-size: 200%;
+	font-weight: bold;
+}
+
+.smallText {
+	font-size: 70%;
+	line-height: 100%;
+}
+
+.errorText {
+	padding: 10px;
+	margin: 10px;
+	border: 2px solid #f22;
+	background-color: #622;
+	font-size: 70%;
+	line-height: 110%;
+}
+
+.flashText {
+	padding: 10px;
+	margin: 10px;
+	border: 2px solid #22f;
+	background-color: #226;
+	font-size: 70%;
+	line-height: 110%;
+}
+
+.importantText {
+	padding: 10px;
+	margin: 10px;
+	border: 2px solid #2f2;
+	background-color: #262;
+	font-size: 70%;
+	line-height: 110%;
+}
+
+.answerLetter {
+	vertical-align: middle;
+	width: 40px;
+	height: 40px;
+}
+
+.scoreboardRow {
+	font-size: 50%;
+	line-height: 100%;
+	color: #aaa;
+	border-bottom: 1px solid #aaa;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	padding-top: 6px;
+	padding-bottom: 6px;
+}
+
+.scoreboardRow.first {
+	border-top: 1px solid #aaa;
+}
+
+.scoreboardRow.me {
+	color: #fff;
+}
+
+.scoreboardRow .movement {
+	width: 30px;
+	font-family: Helvetica, Tahoma, Arial, sans-serif;
+	font-size: 80%;
+	float: left;
+	background-repeat: no-repeat;
+	background-position: center left;
+	padding-left: 17px;
+	margin-right: -17px;
+	padding-top: 1px;
+}
+.scoreboardRow .movement.red {
+	background-image: url('/images/down.png');
+	color: #99413f;
+}
+.scoreboardRow .movement.green {
+	background-image: url('/images/up.png');
+	color: #429756;
+}
+
+.scoreboardRow .rank {
+	width: 30px;
+	text-align: right;
+	float: right;
+	margin-top: -2px;
+}
+
+.alignRight {
+	text-align: right;
+}
+
+/* IE PNG Fix */
+img { behavior: url(/css/iepng/iepngfix.php) }
